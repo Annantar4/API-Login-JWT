@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJOYW1lIjoiYW5uYW50YSIsInVzZXJFbWFpbCI6ImFubmFudGFAZ21haWwuY29tIiwiaWF0IjoxNzIyMjc0NDQxLCJleHAiOjE3MjIyODE2NDF9.mztAoo-4bXFa1vNgGLKCH5NCP9vbNyzWaV39SM1XFeU
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "names":"rizky",
+    "emails":"rizky@gmail.com",
+    "passwords":"123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"annanta@gmail.com",
+    "password":"123456"
+} 
+
+###
+GET http://localhost:5000/user 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJOYW1lIjoiYW5uYW50YSIsInVzZXJFbWFpbCI6ImFubmFudGFAZ21haWwuY29tIiwiaWF0IjoxNzIyMjc1NzY5LCJleHAiOjE3MjIyODI5Njl9.05BgYg0AP5pRDHSLKNH2rPGI7kG4B1w_Bmx3xrFUPBQ
